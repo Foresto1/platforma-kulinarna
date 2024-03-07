@@ -43,3 +43,9 @@ body {
 .recipe img {
   border-radius:15px;
 }
+
+.back {
+  color:aqua;
+  margin-bottom: 20px;
+  text-align: center;
+}
