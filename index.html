@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>przepisy</title>
-    <link rel="stylesheet" href="style.css">    
-</head>
-<body>
-    <header>
-        <h1>Strona Kulinarne Przyjemności</h1>
-        <p>Znajdź przepisy na wyśmienite potrawy i odkryj nowe smaki!</p>
-      </header>
-    
-    <h1>Prosta wyszukiwarka</h1>
-    
-    <form action="/search-results-page" method="get">
-      <label for="searchQuery">Wyszukaj:</label>
-      <input type="text" id="searchQuery" name="q" placeholder="Znajdz swój przepis">
-      <button type="submit">Szukaj</button>
-    </form>
-    <h2>Tosty</h2>
-<img src="tosty-omletem-i-szynka.webp" alt="Trulli" width="500" height="333">
-<h3>2 jajka
-    2 kromki chleba tostowego
-    łyżeczka masła
-    plasterek sera topionego
-    2 plasterki szynki</h3>
-    <h2>Hot Dogi</h2>
-    <img src="d257bb4fe192628f00a98b1f08a7976fbf7f21d4.jpg" alt="Trulli" width="500" height="333">
-    <h3>20 g oleju
-200g cebuli
-20 g cukru
-80g piwa
-½ łyżeczki soli</h3>
-<h2>stek t-bone</h2>
-<img src="przepis-na-stek-t-bone-01.jpg" alt="Trulli" width="500" height="333">
-<h3>dobrej jakości stek o grubości min. 3 cm
-    oliwa, sól i pieprz
-    masło
-    czosnek
-    gałązka rozmarynu
-    Twórca: Monika Pazdej </h3>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>przepisy</title>
+        <link rel="stylesheet" href="style.css">    
+    </head>
+    <body>
+        <header>
+            <h1>Strona Kulinarne Przyjemności</h1>
+            <p>Znajdź przepisy na wyśmienite potrawy i odkryj nowe smaki!</p>
+        </header>
+        
+        <h1>Prosta wyszukiwarka</h1>
+        
+        <form action="/search-results-page" method="get">
+        <label for="searchQuery">Wyszukaj:</label>
+        <input type="text" id="searchQuery" name="q" placeholder="Znajdz swój przepis">
+        <button type="submit">Szukaj</button>
+        </form>
 
-</body>
+        <br>
+        <br>
+        <br>
+
+        <div class="recipe-container">
+            <div class="recipe" onclick="toasts()">
+                <h2>Tosty</h2>
+                <img src="tosty-omletem-i-szynka.webp" alt="Trulli" width="500" height="333">
+            </div>
+
+            <div class="recipe" onclick="hotdogs()">
+                <h2>Hot Dogi</h2>
+                <img src="d257bb4fe192628f00a98b1f08a7976fbf7f21d4.jpg" alt="Trulli" width="500" height="333">
+            </div>
+
+            <div class="recipe" onclick="steak()">
+                <h2>stek t-bone</h2>
+                <img src="przepis-na-stek-t-bone-01.jpg" alt="Trulli" width="500" height="333">
+            </div>
+        </div>
+
+        <script>
+            function toasts() {
+                window.location.href = "file:///C:/Users/4853181/Desktop/platforma-kulinarna/recipes/toasts.html";
+            }
+
+            function hotdogs() {
+                window.location.href = "file:///C:/Users/4853181/Desktop/platforma-kulinarna/recipes/hotdogs.html";
+            }
+
+            function steak() {
+                window.location.href = "file:///C:/Users/4853181/Desktop/platforma-kulinarna/recipes/steak.html";
+            }
+        </script>
+    </body>
 </html>
